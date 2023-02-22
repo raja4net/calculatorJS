@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 20rem;
+  height: 100%;
+  background-color: #aaaaaa;
+  border-radius: 1rem;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.display {
+  display: flex;
+
+  background-color: #eeeeee;
+  height: 6.5rem;
+  border-radius: 0.4rem;
+  border: 2px solid black;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calculation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  font-size: 1.3rem;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.5rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-primary {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+#clear {
+  background-color: #ee9999;
+  width: 9.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+}
+
+#delete {
+  background-color: #9999ee;
+  width: 9.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+}
+
+.buttons-input {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.numbers {
+  height: 4rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
