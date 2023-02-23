@@ -25,6 +25,15 @@ function reset () {
     input.innerHTML = "0"
 }
 
+function deleteFunction() {
+    btnValue = btnValue.slice(0,btnValue.length - 1)
+    console.log(btnValue);
+    input.innerHTML = btnValue
+    if (input.innerHTML == "") {
+        input.innerHTML = "0"
+    }
+}
+
 function btnClicked(e) {
     let clickedInput  = e.target.innerHTML
      
@@ -50,3 +59,4 @@ numbers.forEach(number => {
 clear.addEventListener("click", reset)
 
 //DELETE button functionality
+deleteBtn.addEventListener("click", deleteFunction)
