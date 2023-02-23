@@ -34,6 +34,11 @@ function deleteFunction() {
     }
 }
 
+function calculate(e) {
+    console.log(e.target.innerHTML)
+
+}
+
 function btnClicked(e) {
     let clickedInput  = e.target.innerHTML
      
@@ -53,6 +58,10 @@ function btnClicked(e) {
 
 numbers.forEach(number => {
     number.addEventListener('click', btnClicked)
+})
+
+operators.forEach(operator => {
+    operator.addEventListener("click", calculate)
 })
 
 // CLEAR button functionality
